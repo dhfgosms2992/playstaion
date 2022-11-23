@@ -1,0 +1,1489 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+body {
+    line-height: 1;
+}
+
+:root {
+    --second-bg-color: #2C2A2A;
+    --main-background-color: #000000;
+    --gnb-bg-color: #424242;
+    --gnb-color: #767171;
+    --text-color: #ffff;
+    --gnb-hover-color: #ffff;
+    --span-color: #F97A05;
+    --ac-bg: #272727;
+    --btn-bg: #F97A05;
+    --btn-text-color: #434444;
+    --btn-hover-bg: #c26106;
+    --btn-buy-now-inactive: #FF0101;
+    --btn-buy-now-active: #c20505;
+    --btn-learn-more-inactive: #3E4CCE;
+    --btn-learn-more-active: #3642b1;
+    --third-bg-color : #484848;
+    --bg-merch-color : #121316;
+    
+}
+
+/* --btn-acitve-color: #AAA9A9;a */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+#top-scroll-bt {
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right:1%;
+    top:83%;
+    /* background-color: red; */
+    z-index: 9999;
+    border-radius: 50%;
+}
+
+
+#top-scroll-bt > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+
+#top-scroll-bt > a img {
+    width: 100%;
+    height: 100%;
+}
+
+#top-scroll-bt:hover {
+    color:white;
+}
+
+span {
+    color: var(--span-color);
+}
+
+/* LOGO INTRO  */
+#intro {
+    width:100%;
+    height:100%;
+    background:black;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: 9999999;
+    /*display: none;*/
+}
+
+
+#intro .inner {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    color:White;
+    padding: 25px 27px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    
+}
+
+#intro .inner > article {
+    float: left;
+    width: 220px;
+    height: 220px;
+    position: relative;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    
+}
+
+#intro .inner  article > div {
+    width: 100%;
+    height: 220px;
+    transition: all ease-in 0.5s;
+    opacity:0;
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+
+#intro .inner  article img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* SONY LOGO */
+#sony {
+    background-color: black;
+    height: 40px;
+}
+
+#sony img {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 72px;
+    height: 15px;
+}
+
+/* HEDAER */
+header .left img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+/* logo img  */
+header {
+    background-color: var(--gnb-bg-color);
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    color: var(--gnb-color)
+}
+
+header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+
+header .inner ul li:hover a {
+    color: var(--gnb-hover-color);
+    transition: all ease-in 0.9s;
+    border-bottom: 3px solid var(--gnb-hover-color);
+}
+
+header nav ul.gnb-left-box {
+    margin-left: 10px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+}
+
+header ul li {
+    padding: 14px;
+}
+
+header ul li a {
+    transition: all ease-in 0.9s;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+header .right {
+    display: flex;
+}
+
+header ul.gnb-right-box {
+    margin-right: 20px;
+}
+
+header .right li {
+    margin-right: 10px;
+}
+
+header .right li:last-child {
+    margin-right: 30px;
+    margin-left: -10px;
+}
+
+/* Input style */
+header .right li input[type=text] {
+    transition: all ease-in 0.9s;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 35px;
+    background-color: var(--gnb-color);
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+}
+
+header .right li input:hover {
+    border: 2px solid var(--text-color);
+    transition: all ease-in 0.9s;
+}
+
+/* SECTION-01 - MAINSLIDE */
+.main-slide-wrap {
+    width: 100%;
+    height: 700px;
+}
+
+.main-slide-wrap .slide-container {
+    width: 100%;
+    height: 700px;
+}
+
+.main-slide-wrap .slide-container .slide {
+    width: 100%;
+    height: 700px;
+    background-color: black !important;
+    border: 1px solid black !important;
+}
+
+.main-slide-wrap .slide-container .slide .slide-img-box {
+    margin: 70px 20px;
+    height: 500px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.main-slide-wrap .slide-container .slide .slide-img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main slide  using bxslider plugin */
+.bx-wrapper {
+    border: 0;
+}
+
+/* 화살표 커스텀 */
+.main-slide-wrap .bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 87px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-controls-direction a:nth-of-type(1) {
+    background: url(../img/prev-icon.png);
+}
+
+.main-slide-wrap .bx-wrapper .bx-prev {
+    background-image: none;
+    background-color: var(--gnb-color);
+    opacity: 0.2;
+    width: 100px;
+    height: 500px;
+    transition: all ease-in 0.5s;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-left: 10px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-prev:hover, .main-slide-wrap .bx-wrapper .bx-prev:active {
+    opacity: 0.3;
+    transition: all ease-in 0.5s;
+}
+
+.main-slide-wrap .bx-wrapper .bx-controls-direction a:nth-of-type(2) {
+    background: url(../img/next-icon.png);
+}
+
+.main-slide-wrap .bx-wrapper .bx-next {
+    background-image: none;
+    background-color: var(--gnb-color);
+    opacity: 0.2;
+    width: 100px;
+    height: 500px;
+    transition: all ease-in 0.5s;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-right: 10px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-next:hover, .main-slide-wrap .bx-wrapper .bx-next:active {
+    opacity: 0.3;
+    transition: all ease-in 0.5s;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 35px;
+    width: 70%;
+    left: 286px;
+}
+
+/* dots 위치 */
+/* Main-slide-wrap  DOTS INACTIVE*/
+.main-slide-wrap .bx-wrapper .bx-pager-item a {
+    width: 50px;
+    height: 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(1) a {
+    background: url("../img/inactive-cir-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(2) a {
+    background: url("../img/inactive-cr-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(3) a {
+    background: url("../img/inactive-ra-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(4) a {
+    background: url("../img/inactive-tr-icon.png") no-repeat center / 50px 50px;
+}
+
+/* DOTS ACTIVE */
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(1) a.active {
+    background: url("../img/active-cir-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(2) a.active {
+    background: url("../img/active-cr-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(3) a.active {
+    background: url("../img/active-rac-icon.png") no-repeat center / 50px 50px;
+}
+
+.main-slide-wrap .bx-wrapper .bx-pager-item:nth-of-type(4) a.active {
+    background: url("../img/active-tr-icon.png") no-repeat center / 50px 50px;
+}
+
+
+/* dots position  위치 */
+.ps-accessories-wrap .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 45px;
+    width: 70%;
+    left: 286px;
+}
+
+/* dots 위치 */
+/* 아이콘 커스텀   .ps-accessories-wrap */
+.ps-accessories-wrap .bx-wrapper .bx-pager-item a {
+    width: 50px;
+    height: 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(1) a {
+    background: url("../img/inactive-cir-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(2) a {
+    background: url("../img/inactive-cr-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(3) a {
+    background: url("../img/inactive-ra-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(4) a {
+    background: url("../img/inactive-tr-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(1) a.active {
+    background: url("../img/active-cir-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(2) a.active {
+    background: url("../img/active-cr-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(3) a.active {
+    background: url("../img/active-rac-icon.png") no-repeat center / 50px 50px;
+}
+
+.ps-accessories-wrap .bx-wrapper .bx-pager-item:nth-of-type(4) a.active {
+    background: url("../img/active-tr-icon.png") no-repeat center / 50px 50px;
+}
+
+
+/* ps contents info */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .ps-contents-info {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    width: 400px;
+    height: 200px;
+    z-index: 999999999;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .ps-contents-info p {
+    color: black;
+    font-size: 26px;
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+    padding: 10px;
+    line-height: 31px;
+}
+
+/* ps-btn learn-more */
+.ps-contents-info a.btn-learn-more {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    margin: 5px;
+    width: 99px;
+    height: 25px;
+    color: white;
+    background-color: var(--btn-learn-more-inactive);
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.ps-contents-info a.btn-learn-more:hover {
+    background-color: var(--btn-learn-more-active);
+    border: 2px solid var(--btn-learn-more-active);
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+
+/* btn-buy-now */
+.ps-contents-info a.btn-buy-now {
+    font-family: 'Josefin Sans', sans-serif;
+    display: inline-block;
+    width: 65px;
+    height: 25px;
+    color: white;
+    background-color: var(--btn-buy-now-inactive);
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.ps-contents-info a.btn-buy-now:hover {
+    background-color: var(--btn-buy-now-active);
+    border: 2px solid var(--btn-buy-now-inactive);
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+/* font-change */
+.ps-contents-info a.fonts {
+    font-family: 'Anton', sans-serif;
+}
+
+
+/* ps-accessories contents button position  */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .ps-contents-info .position-info-ps5 {
+    position: absolute;
+    bottom: 57px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .ps-contents-info .position-info-others {
+    position: absolute;
+    bottom: 26px;
+}
+
+
+/* ps5 & 4 & 3 & 2 information */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers {
+    width: 1200px;
+    height: 820px;
+    position: relative; /* border: 1px solid white; */
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers #ps5 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 166px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers #ps4 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 166px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers #ps3 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 166px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers #ps2 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 166px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers h3 {
+    display: block;
+    color: white;
+    padding-left: 198px;
+    padding-top: 15px;
+    height: 80px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon {
+    height: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* ps accessories button */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon a.btn {
+    top: 300px;
+    left: 180px;
+    width: 90px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: var(--btn-bg);
+    z-index: 999999;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+    color: var(--gnb-color);
+    padding-top: 9px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon .icon01 a.btn {
+    position: absolute;
+    bottom: 0;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon .icon02 a.btn {
+    position: absolute;
+    bottom: 0;
+    left: 530px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon .icon03 a.btn {
+    position: absolute;
+    top: 658px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon .icon04 a.btn {
+    position: absolute;
+    top: 658px;
+    left: 523px;
+}
+
+/* ps-ac-icon  */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div {
+    width: 320px;
+    height: 350px;
+    background-color: var(--ac-bg);
+    border-radius: 50px;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: var(--btn-text-color);
+    font-family: 'Anton', sans-serif;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ps-ac-hover */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:hover {
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:hover a.btn {
+    color: white;
+    outline: 1px solid white;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:nth-child(1) {
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:nth-child(2) {
+    margin-top: 10px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:nth-child(3) {
+    margin-top: -10px;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-layers .ps-ac-icon div:nth-child(4) {
+    margin-top: -10px;
+}
+
+/* ps-accessories-wrap */
+.ps-accessories-wrap .ps_accessories_container .slide {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    display: flex;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents {
+    width: 820px;
+    height: 820px;
+    border: 2px solid var(--gnb-bg-color);
+    margin-left: 50px;
+    margin-right: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* ps4 ps2 페이지에서 이미지가 눌려서 하얀색 배경 위치를 밑으로 지정 */
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents.bg-white {
+    background-color: white;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .img-position-ps5 {
+    position: absolute;
+    top: 30px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .img-position-ps4 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+.ps-accessories-wrap .ps_accessories_container .slide .ps-contents .img-position-ps2 {
+    position: absolute;
+    top: 30px;
+    left: 120px;
+}
+
+
+/* play-station-this-month-wrap */
+.play-station-this-month-wrap {
+    margin-top: -63px;
+    width: 100%;
+    height: 720px;
+    background-color: var(--second-bg-color);
+}
+
+.play-station-this-month-wrap .ps-this-month-container {
+    background-color: var(--second-bg-color);
+    width: 100%;
+    height: 369px;
+    border: 0;
+}
+
+.play-station-this-month-title {
+    width: 100%;
+    height: 350px;
+    background-color: var(--second-bg-color);
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 100;
+}
+
+.play-station-this-month-title h2 {
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 67px;
+}
+
+
+.play-station-this-month-title p {
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 10px;
+    line-height: 41px;
+}
+
+
+.play-station-this-month-title a.this-month-btn {
+    display: inline-block;
+    width: 158px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--btn-bg);
+    font-size: 24px;
+    padding-top: 7px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 233px;
+    left: 853px;
+}
+
+.play-station-this-month-title a.this-month-btn:hover {
+    background-color: var(--btn-hover-bg);
+    border: 2px solid white;
+}
+
+
+.play-station-this-month-wrap .ps-this-month-container .slide {
+    width: 100%;
+    height: 369px;
+    /* border: 1px solid white; */
+    background-color: var(--third-bg-color);
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+.play-station-this-month-wrap .ps-this-month-container .slide img {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+}
+
+
+/* bg-img-wrap */
+
+.bg-img-wrap {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    position: relative;
+}
+
+.bg-img-wrap .bg-img-container {
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/big-screen-img.webp);
+    background-size: cover;
+    z-index: -9999999;
+}
+
+
+.bg-img-wrap .bg-img-container .bg-img-contents {
+    width: 870px;
+    height: 700px;
+    /* border: 1px solid white; */
+    position: relative;
+}
+
+#top-line {
+
+    width: 100%;
+    height: 10px;
+    border: 5px solid var(--btn-text-color);
+}
+
+
+.bg-img-wrap .bg-img-container .bg-img-contents h2 {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    font-size: 143px;
+    color: white;
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Bebas Neue', cursive;
+    line-height: 116px;
+}
+
+
+.bg-img-wrap .bg-img-container .bg-img-contents p {
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    line-height: 38px;
+    position: absolute;
+    left: 220px;
+    bottom: 105px;
+}
+
+
+.bg-img-wrap .bg-img-container .bg-img-contents a.bg-img-btn {
+    display: inline-block;
+    width: 158px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--btn-bg);
+    font-size: 32px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 515px;
+    left: 215px;
+    color: white;
+}
+
+.bg-img-wrap .bg-img-container .bg-img-contents a.bg-img-btn:hover {
+    background-color: var(--btn-hover-bg);
+    border: 2px solid white;
+}
+
+
+/*  game-list-container */
+.game-list-wrap {
+    background-color: var(--second-bg-color);
+    /* background-color: var(--main-background-color); */
+    padding-top: 60px;
+    height: 1580px;
+    position: relative;
+}
+
+.game-list-wrap .line-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 3px solid var(--btn-text-color);
+
+}
+
+
+.game-list-wrap input[type=radio] {
+    display: none;
+}
+
+#tab-1:checked ~ .tab label:nth-child(1),
+#tab-2:checked ~ .tab label:nth-child(2) {
+
+    box-shadow: none;
+}
+
+.game-list-wrap .content > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+
+/*
+#tab-1:checked ~ .content div:nth-child(1),
+#tab-2:checked ~ .content div:nth-child(2) {
+    display: block;
+}
+*/
+
+
+.game-list-wrap .tab {
+    overflow: hidden;
+    margin-bottom: 57px;
+}
+
+.game-list-wrap .tab label {
+    font-size: 42px;
+    cursor: pointer;
+    float: left;
+    width: 230px;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #767171;
+    font-family: 'Bebas Neue', cursive;
+    /* border: 1px solid white; */
+    transition: all ease-in 0.5s;
+}
+
+.game-list-wrap .tab label:nth-last-of-type(1) {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.game-list-wrap .tab label:nth-last-of-type(2) {
+    margin-left: 103px;
+    margin-bottom: 10px;
+}
+
+.game-list-wrap .tab label:hover {
+    font-size: 45px;
+    transition: all ease-in 0.5s;
+    color: var(--btn-bg);
+    border-bottom: 2px solid var(--btn-bg);
+}
+
+.game-list-wrap .tab label.on {
+    font-size: 45px;
+    transition: all ease-in 0.5s;
+    color: var(--btn-bg);
+    border-bottom: 2px solid var(--btn-bg);
+}
+
+
+.game-list-wrap .content {
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 1200px;
+    position: relative;
+
+}
+
+.game-list-wrap .content > div {
+    width: 100%;
+    /* height: 700px; */
+    /* border: 1px solid white; */
+    color: white;
+    transition: opacity 0.5s;
+    opacity: 0;
+    z-index: 0;
+}
+.game-list-wrap .content > div.on{
+    opacity: 1;
+    z-index: 1;
+}
+
+.game-list-wrap .content .content-box-01 {
+    width: 1800px;
+    /* height: 1400px; */
+    /* border: 1px solid red; */
+    margin-left: 57px;
+}
+
+
+.game-list-wrap .content .content-box-01 > div {
+    width: 400px;
+    height: 600px;
+    float: left;
+    margin-left: 38px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    transition: all ease-in 0.5s;
+    border: 2px solid white;
+}
+
+
+
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    opacity: 1;
+    color:white;
+    padding: 30px 25px;
+     top: -100%;  
+    z-index: 1;
+    transition: all ease-in 0.2s;
+}
+.game-list-wrap .content .display-none-wrap > div:hover .display-none-box {
+    opacity: 0.9;
+    top: 0;
+    transition: all ease-in 0.5s;
+}
+
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container {
+    width: 350px;
+    height: 500px;
+    opacity: 1;
+    position: relative;
+    z-index: 99999; 
+    /* border:1px solid white; */
+}
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container > div:nth-child(1){
+    width: 200px;
+    height: 200px;
+    margin-left:80px;
+    margin-top:50px;
+    /* border: 1px solid red; */
+}
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-button-img img {
+   width: 100%;
+   height: 100%;
+}
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-button-img:hover img {
+    cursor: pointer;
+}
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container > div:nth-child(2) {
+    margin-top:30px;
+    margin-left:20px;
+    width: 90%;
+    height: 200px;
+    color:white;
+    position: relative;
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-info h2 {
+    font-size: 22px;
+    text-align: center;
+}
+
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-info p {
+    padding-top:30px;
+    font-size: 9px;
+    
+}
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-info .play-info-img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right:5px;
+    bottom:5px;
+    /* border: 1px solid red; */
+}
+
+.game-list-wrap .content .display-none-wrap .display-none-box .display-none-container .play-info .play-info-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .game-list-wrap .content .content-box-02 > div:hover .display-none-box {
+    opacity: 0.5;
+    top: 0;
+    transition: all ease-in 0.5s;
+
+}
+
+
+.game-list-wrap .content .content-box-02 .display-none-box {
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: absolute;
+    top: -100%;
+    opacity: 0;
+} */
+
+
+
+
+
+
+.game-list-wrap .content .content-box-01 > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.game-list-wrap .content .content-box-02 {
+    width: 1800px;
+    /* height: 1400px; */
+    /* border: 1px solid red; */
+    margin-left: 57px;
+
+}
+
+
+.game-list-wrap .content .content-box-02 > div {
+    width: 400px;
+    height: 600px;
+    float: left;
+    margin-left: 38px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+
+
+.game-list-wrap .content .content-box-02 > div > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* playstation-deals-wrap */
+
+.playstation-deals-wrap .line-top{
+position: absolute;
+top: 0px;
+width: 100%;
+border: 3px solid var(--btn-text-color);
+}
+
+
+
+.playstation-deals-wrap {
+    width: 100%;
+    height: 850px;
+    background-color: var(--third-bg-color);
+    position: relative;
+
+}
+
+
+.playstation-deals-wrap .playstation-deals-container{
+    width: 90%;
+    height: 600px;
+    position: absolute;
+    top:110px;
+    left:90px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+
+.playstation-deals-container .playstation-deals-text{
+    width: 1000px;
+    height: 500px;
+    margin-top:50px;
+    position: relative;
+    color:white;
+    /* border: 1px solid white; */
+}
+
+
+.playstation-deals-container .playstation-deals-text .playstation-deals-box {
+    margin-top: 120px;
+    width: 100%;
+    height: 200px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    /* border: 1px solid white; */
+}
+
+
+.playstation-deals-container .playstation-deals-text .playstation-deals-box a.deals-text-box-btn {
+    display: inline-block;
+    width: 158px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--btn-bg);
+    font-size: 32px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 218px;
+    left: 0px;
+    color: white;
+}
+
+.playstation-deals-container .playstation-deals-text .playstation-deals-box a.deals-text-box-btn:hover {
+
+background-color: var(--btn-hover-bg);
+border: 2px solid white;
+}
+
+.playstation-deals-container .playstation-deals-text .playstation-deals-box h2 {
+    font-size: 50px;
+    padding-bottom:20px;
+}
+
+.playstation-deals-container .playstation-deals-text .playstation-deals-box p {
+    font-size: 35px;
+}
+
+
+.playstation-deals-container .playstation-deals-img {
+    margin-top:50px;
+    width: 900px;
+    height: 500px;
+    /* border: 1px solid white; */
+}
+
+
+.playstation-deals-container .playstation-deals-img img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50px; */
+}
+
+
+/* playstation-merchandise-warp */
+
+.playstation-merchandise-warp{
+    width: 100%;
+    height: 805px;
+    background-color: var(--bg-merch-color);
+  
+}
+
+
+
+.playstation-merchandise-warp .playstation-merchandise-container{
+    width: 100%;
+    height: 820px;
+    background-image: url(../img/PLAY\ STATION\ SHOP.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--bg-merch-color);
+    position: relative;
+}
+
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstation-merchandise-info {
+    width: 1000px;
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    left: 220px;
+    font-family: 'Ubuntu', sans-serif;
+    color:white;
+    /* border: 1px solid white; */
+}
+
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstation-merchandise-info h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstation-merchandise-info p {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
+.playstation-merchandise-warp a.playstation-merchandise-btn {
+    display: inline-block;
+    width: 158px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--btn-bg);
+    font-size: 32px;
+    padding-top: 5px;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    font-weight: bold;
+    position: absolute;
+    top: 278px;
+    left: 890px;
+    color: white;
+}
+
+.playstation-merchandise-warp a.playstation-merchandise-btn:hover {
+    background-color: var(--btn-hover-bg);
+    border: 2px solid white;
+}
+
+
+
+
+
+.playstation-merchandise-container .bx-wrapper {
+    border:0;
+    /* background:#fbfbfb; */
+    box-shadow:none;
+    height: 450px;
+    top: 42%;
+    left: 12%;
+    border-radius: 50px;
+
+}
+
+
+
+
+
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstaion-merchandise-box{
+    background-color: #171718;
+    border: 0;
+    height: 450px;
+}
+
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstaion-merchandise-box .slide {
+    border-radius: 50px;
+    width: 200px;
+    height: 450px;
+    padding:20px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.playstation-merchandise-warp .playstation-merchandise-container .playstaion-merchandise-box .slide  img {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* social-media-wrap */
+
+.social-media-wrap {
+    width: 100%;
+    height: 660px;
+    background-color: var(--second-bg-color);
+    position: relative;
+}
+
+
+.social-media-wrap .social-mdeia-container {
+    width: 1300px;
+    height: 450px;
+    position: absolute;
+    top:111px;
+    left:290px;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    /* border: 1px solid white; */
+}
+
+
+
+.social-media-wrap .social-mdeia-container h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.social-media-wrap .social-mdeia-container > div {
+    float: left;
+    width: 290px;
+    height: 300px;
+    margin-top: 45px;
+    margin-left: 25px;
+    /* border: 1px solid white; */
+    
+}
+
+.social-media-wrap .social-mdeia-container > div img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+/* footer */
+
+footer.company-info-wrap{
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    position: relative;
+    color:var(--gnb-color);
+}
+
+
+footer.company-info-wrap .company-info-text {
+    width: 1600px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+}
+
+footer.company-info-wrap .company-info-text > div {
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid white; */
+}
+
+
+
+
+footer.company-info-wrap .company-info-text > div:last-child {
+    width: 700px;
+}
+
+
+
+footer.company-info-wrap .company-info-text .footer-logo {
+    position: relative;
+}
+
+
+footer.company-info-wrap .company-info-text .footer-logo .footer-logo-img{
+    position: absolute;
+    top:90px;
+    left:60px;
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid white; */
+}
+
+
+footer.company-info-wrap .company-info-text .footer-logo .footer-logo-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+footer.company-info-wrap .company-info-text .footer-logo p {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 20px;
+}
+
+
+footer.company-info-wrap .company-info-text .footer-text {
+    display: flex;
+    font-size: 20px;
+    
+}
+
+footer.company-info-wrap .company-info-text .footer-text > div {
+    width: calc(100%/2);
+    /* border: 1px solid white; */
+    
+}
+
+footer.company-info-wrap .company-info-text .footer-text > div p {
+    letter-spacing: 2px;
+}
+
+
+footer.company-info-wrap .company-info-text .footer-text div.left {
+    text-align: left;
+    padding: 90px 70px;
+}
+
+
+
+footer.company-info-wrap .company-info-text .footer-text div.right {
+    text-align: left;
+    padding: 90px 70px;
+}
